@@ -1,0 +1,158 @@
+{
+    "formateur": [
+      {
+        "id": 1,
+        "name": "Ahmed Benali",
+        "birthday": "1990-05-15",
+        "post": "formateur"
+      },
+      {
+        "id": 2,
+        "name": "Fatima Zahra",
+        "birthday": "1988-04-12",
+        "post": "formateur"
+      },
+      {
+        "id": 3,
+        "name": "Imane El Fassi",
+        "birthday": "1985-10-23",
+        "post": "formateur"
+      },
+      {
+        "id": 4,
+        "name": "Leila Hamdouni",
+        "birthday": "1989-02-18",
+        "post": "formateur"
+      },
+      {
+        "id": 5,
+        "name": "Nadia Touimi",
+        "birthday": "1987-11-05",
+        "post": "formateur"
+      },
+      {
+        "id": 6,
+        "name": "Karim Lamsaoui",
+        "birthday": "1983-03-30",
+        "post": "formateur"
+      },
+      {
+        "id": 7,
+        "name": "Asma Chafik",
+        "birthday": "1990-10-02",
+        "post": "formateur"
+      }
+    ],
+  
+    "responsable_fabric": [
+      {
+        "id": 1,
+        "name": "Sofia El Mansouri",
+        "birthday": "1995-09-20",
+        "post": "responsable fabric"
+      },
+      {
+        "id": 2,
+        "name": "Meryem Khattabi",
+        "birthday": "1993-07-19",
+        "post": "responsable fabric"
+      },
+      {
+        "id": 3,
+        "name": "Mohamed Sefiani",
+        "birthday": "1992-03-08",
+        "post": "responsable fabric"
+      },
+      {
+        "id": 4,
+        "name": "Khalid Bensalem",
+        "birthday": "1991-12-15",
+        "post": "responsable fabric"
+      },
+      {
+        "id": 5,
+        "name": "Rachid Ait Elhaj",
+        "birthday": "1996-09-16",
+        "post": "responsable fabric"
+      },
+      {
+        "id": 6,
+        "name": "Hajar Belkadi",
+        "birthday": "1994-05-21",
+        "post": "responsable fabric"
+      },
+      {
+        "id": 7,
+        "name": "Tariq Lamrabet",
+        "birthday": "1998-12-10",
+        "post": "responsable fabric"
+      }
+    ],
+  
+    "apprenant": [
+      {
+        "id": 1,
+        "name": "Youssef Amrani",
+        "birthday": "2002-11-03",
+        "post": "apprenant"
+      },
+      {
+        "id": 2,
+        "name": "Hassan Laalami",
+        "birthday": "2000-01-11",
+        "post": "apprenant"
+      },
+      {
+        "id": 3,
+        "name": "Omar Tazi",
+        "birthday": "1997-06-29",
+        "post": "apprenant"
+      },
+      {
+        "id": 4,
+        "name": "Salma Karimi",
+        "birthday": "2003-08-24",
+        "post": "apprenant"
+      },
+      {
+        "id": 5,
+        "name": "Zineb Lahlou",
+        "birthday": "1999-04-25",
+        "post": "apprenant"
+      },
+      {
+        "id": 6,
+        "name": "Samir Ouahidi",
+        "birthday": "2001-07-07",
+        "post": "apprenant"
+      }
+    ],
+  
+    "chef_de_project": [
+      {
+        "id": 1,
+        "name": "Karim Tazi",
+        "birthday": "1984-03-12",
+        "post": "chef de project"
+      },
+      {
+        "id": 2,
+        "name": "Amine El Karoui",
+        "birthday": "1989-11-09",
+        "post": "chef de project"
+      },
+      {
+        "id": 3,
+        "name": "Sabrina Alami",
+        "birthday": "1991-07-24",
+        "post": "chef de project"
+      },
+      {
+        "id": 4,
+        "name": "Mohammed Azizi",
+        "birthday": "1985-12-05",
+        "post": "chef de project"
+      }
+    ]
+  }
+  

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>drag & drop</title>
+</head>
+<body>
+  <section class="grid grid-cols-1 md:grid-cols-5 h-[100vh] gap-6 p-6 bg-gray-900">
+    <!-- Left Section -->
+    <div class="grid grid-cols-2 gap-6 grid-rows-2 col-span-4 md:col-span-4 w-full bg-gray-800 p-6 rounded-lg shadow-lg">
+      
+      <div class="flex flex-col border-[1px] border-gray-700 rounded-lg p-4 bg-gray-800">
+        <div class="pb-3">
+          <h2 class="text-2xl font-semibold text-white">Apprenant</h2>
+        </div>
+      
+        <div class="box flex justify-center items-center w-full  cursor-pointer h-full bg-gray-700   rounded-lg p-6 shadow-sm  hover:bg-gray-600 transition-colors">
+          
+        </div>
+      </div>
+      <div class="flex flex-col border-[1px] border-gray-700 rounded-lg p-4 bg-gray-800">
+        <div class="pb-3">
+          <h2 class="text-2xl font-semibold text-white">formateur</h2>
+        </div>
+      
+        <div class="box flex justify-center items-center w-full  cursor-pointer h-full bg-gray-700   rounded-lg p-6 shadow-sm  hover:bg-gray-600 transition-colors">
+          
+        </div>
+      </div>
+      <div class="flex flex-col border-[1px] border-gray-700 rounded-lg p-4 bg-gray-800">
+        <div class="pb-3">
+          <h2 class="text-2xl font-semibold text-white">responsable fabric</h2>
+        </div>
+      
+        <div class="box flex justify-center items-center w-full  cursor-pointer h-full bg-gray-700   rounded-lg p-6 shadow-sm  hover:bg-gray-600 transition-colors">
+          
+        </div>
+      </div>
+      <div class="flex flex-col border-[1px] border-gray-700 rounded-lg p-4 bg-gray-800">
+        <div class="pb-3">
+          <h2 class="text-2xl font-semibold text-white">chef de project</h2>
+        </div>
+      
+        <div class="box flex justify-center items-center w-full  cursor-pointer h-full bg-gray-700   rounded-lg p-6 shadow-sm  hover:bg-gray-600 transition-colors">
+      
+        </div>
+      </div>
+  
+
+    </div>
+  
+    <!-- Right Section -->
+    <div class="data_box overflow-auto col-span-1 w-full flex flex-col gap-6 bg-gray-800 p-6 rounded-lg shadow-lg">
+      <!-- Profile Cards -->
+      <div draggable="true" class="list max-w-xs cursor-pointer rounded-lg border-[1px] border-gray-700 bg-gray-800">
+        <div class="px-6 py-4">
+          <div class="name font-semibold text-2xl mb-2 text-blue-400">Ahmed Benali</div>
+          <p class="post_title text-white text-lg">Formateur</p>
+          <p class="birthday text-gray-400 text-sm">Birthday: <span class="font-medium">May 15, 1990</span></p>
+        </div>
+      </div>
+      <div draggable="true" class="list max-w-xs cursor-pointer rounded-lg border-[1px] border-gray-700 bg-gray-800">
+        <div class="px-6 py-4">
+          <div class="name font-semibold text-2xl mb-2 text-blue-400">Ahmed Benali</div>
+          <p class="post_title text-white text-lg">Formateur</p>
+          <p class="birthday text-gray-400 text-sm">Birthday: <span class="font-medium">May 15, 1990</span></p>
+        </div>
+      </div>
+      <div draggable="true" class="list max-w-xs cursor-pointer rounded-lg border-[1px] border-gray-700 bg-gray-800">
+        <div class="px-6 py-4">
+          <div class="name font-semibold text-2xl mb-2 text-blue-400">Ahmed Benali</div>
+          <p class="post_title text-white text-lg">Formateur</p>
+          <p class="birthday text-gray-400 text-sm">Birthday: <span class="font-medium">May 15, 1990</span></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  
+  
+</body>
+<script src="./script.js"></script>
+</html>
