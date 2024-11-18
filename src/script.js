@@ -1,48 +1,54 @@
-let lists = document.querySelectorAll(".list");
-let boxes = document.querySelectorAll(".box");
-let full_name = document.querySelectorAll(".full_name");
-let post_title = document.querySelectorAll(".post_title");
-let birthday = document.querySelectorAll(".birthday");
+let lists = document.querySelector(".list");
+let searchBar = document.getElementById("searchBar");
+let profilePersonData = []; 
 
-const fetchData = async () => {
-    const jsonFileUrl = "./data.json";
 
+const loadData = async () => {
     try {
-        const response = await fetch(jsonFileUrl);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        const data = await response.json();
-
-
-        data.team.forEach((member, index) => {
-            if (full_name[index]) full_name[index].textContent = member.name;
-            if (post_title[index]) post_title[index].textContent = member.post;
-            if (birthday[index]) birthday[index].textContent = member.birthday;
-        });
-
-    } catch (error) {
-        console.error("Error fetching data:", error.message);
+        const res = await fetch("./data.json");
+        profilePersonData = await res.json(); 
+        addData(profilePersonData.team);
+    } catch (err) {
+        console.error("Error loading data:", err);
     }
 };
 
-fetchData();
 
-lists.forEach(list => {
-    
-    list.addEventListener("dragstart", function (e) {
-        const selected = e.target;
+const addData = (teamData) => {
+    const htmlString = teamData.map((element) => {
+        return `
+        <div draggable="true" class="max-w-xs cursor-pointer rounded-lg border-[1px] border-gray-700 dark:border-gray-600 bg-gray-800 dark:bg-gray-800">
+          <div class="px-6 py-4">
+             <div class="full_name font-semibold text-2xl mb-2 text-blue-400">${element.name}</div>
+             <p class="post_title text-white dark:text-gray-200 text-lg">${element.post}</p>
+             <p class="text-gray-400 dark:text-gray-300 text-sm">Birthday: <span class="font-medium birthday">${element.birthday}</span></p>
+          </div>
+         </div>
+        `;
+    })
 
-        boxes.forEach(box => {
-            box.addEventListener("dragover", function (e) {
-                e.preventDefault();
-            });
+    lists.innerHTML = htmlString;
+};
 
-            box.addEventListener("drop", function () {
-                box.appendChild(selected);
-            });
-        });
+searchBar.addEventListener("keyup", (e) => {
+    const searchString = e.target.value.toLowerCase();
+    const filteredData = profilePersonData.team.filter((item) => {
+        return (
+            item.name.toLowerCase().includes(searchString) 
+        );
     });
+    addData(filteredData);
 });
+
+loadData();
+
+
+
+
+
+
+
+
+
+
+
