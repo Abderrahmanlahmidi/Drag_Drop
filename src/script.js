@@ -25,7 +25,7 @@ const addData = (teamData) => {
           </div>
          </div>
         `;
-    })
+    }).join(' ');
 
     lists.innerHTML = htmlString;
 };

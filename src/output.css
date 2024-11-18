@@ -632,8 +632,8 @@ video {
   justify-content: center;
 }
 
-.gap-2{
-  gap: 0.5rem;
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-6{
@@ -705,6 +705,14 @@ video {
 
 .pb-6{
   padding-bottom: 1.5rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-2xl{
