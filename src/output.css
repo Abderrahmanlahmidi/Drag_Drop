@@ -604,6 +604,10 @@ video {
   max-width: 20rem;
 }
 
+.cursor-all-scroll{
+  cursor: all-scroll;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -705,14 +709,6 @@ video {
 
 .pb-6{
   padding-bottom: 1.5rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
-}
-
-.pt-6{
-  padding-top: 1.5rem;
 }
 
 .text-2xl{
@@ -849,3 +845,32 @@ body{
     background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
   }
 }
+
+.\[\&\:\:-webkit-scrollbar-thumb\]\:bg-gray-900::-webkit-scrollbar-thumb{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+}
+
+@media (prefers-color-scheme: dark){
+  .dark\:\[\&\:\:-webkit-scrollbar-thumb\]\:bg-neutral-900::-webkit-scrollbar-thumb{
+    --tw-bg-opacity: 1;
+    background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
+  }
+}
+
+.\[\&\:\:-webkit-scrollbar-track\]\:bg-gray-300::-webkit-scrollbar-track{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
+
+@media (prefers-color-scheme: dark){
+  .dark\:\[\&\:\:-webkit-scrollbar-track\]\:bg-neutral-700::-webkit-scrollbar-track{
+    --tw-bg-opacity: 1;
+    background-color: rgb(64 64 64 / var(--tw-bg-opacity, 1));
+  }
+}
+
+.\[\&\:\:-webkit-scrollbar\]\:w-3::-webkit-scrollbar{
+  width: 0.75rem;
+}
+
